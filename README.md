@@ -449,3 +449,15 @@ getMostPopularAuthors(books, authors);
 ```
 
 ## Screenshots
+
+### Overall Stats
+
+![overall-stats](https://user-images.githubusercontent.com/68755319/131877820-d206c64d-0424-4aa6-92ab-d55a85cc985c.png)
+
+### Stats by Book
+
+![stats-by-book](https://user-images.githubusercontent.com/68755319/131877090-1e18ea3b-0ac1-4e47-8b68-2a3c31287096.png)
+
+### Stats by Account
+
+![stats-by-account](https://user-images.githubusercontent.com/68755319/131877112-d2527089-8225-4ef4-bb9c-f36612f0b8de.png)
