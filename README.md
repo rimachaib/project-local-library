@@ -1,28 +1,40 @@
 ## Local Library Project
 
 ## Table of Contents
-* [General Information](#general-information)
-* [Technologies](#technologies)
-* [Datasets](#datasets)
-* [Account Functions](#account-functions)
-* [Screenshots](#screenshots)
+
+- [General Information](#general-information)
+- [Technologies](#technologies)
+- [Datasets](#datasets)
+- [Account Functions](#account-functions)
+- [Screenshots](#screenshots)
 
 ## General Information
-This web page was built for a neighborhood that has decided to create a digital local library where patrons can lend and borrow books.  I assisted with this project by building the javascript algorithms that render various statistics on the pages' dashboard.  The project goals were:
- * Practice writing javascript in a project based enviornment by working with large datasets.
- * Build algorithms based on those datasets.
- * Use well-named variables, in particular avoiding any single letter variables that lack meaning.
-* Use native array methods like .find(), .filter(), .map(), and .reduce().
-* Make use of both function declarations and arrow functions.
-* Build helper functions when appropriate.
-* Make use of advanced JavaScript features like ternary operators, the spread operator, object shorthand, array and object destructuring, and for/in loops.
+
+This web page was built for a neighborhood that has decided to create a digital local library where patrons can lend and borrow books. I assisted with this project by building the javascript algorithms that render various statistics on the pages' dashboard. The project goals were:
+
+- Using Visual Studio Code as a text editor
+- Practicing writing javascript in a project based enviornment by working with large datasets.
+- Building algorithms based on those datasets.
+- Differentiating between the three most common JavaScript error types
+- Solving bugs by using error messages
+  Differentiating between let, const, and var, and using each appropriately
+- Accessing all the values and keys of an object
+- Using find(), filter(), map(), some(), and every() to solve different problems
+- Using reduce() to solve different problems
+- Using sort() to sort arrays in various ways
+- Using well-named variables, in particular avoiding any single letter variables that lack meaning.
+- Making use of both function declarations and arrow functions.
+- Building helper functions when appropriate.
+- Making use of advanced JavaScript features like ternary operators, the spread operator, object shorthand, array and object destructuring, and for/in loops.
 
 ## Technologies
-* HTML
-* CSS
-* JavaScript
+
+- HTML
+- CSS
+- JavaScript
 
 ## Datasets
+
 There are three datasets that are a part of this project: accounts, authors, and books.
 
 ### Accounts
@@ -30,15 +42,16 @@ There are three datasets that are a part of this project: accounts, authors, and
 You can view all of the accounts data inside of the public/data/ directory. Each account is an object and an account represents a person who is registered with the library. Accounts can take out and return books.
 
 ### Authors
+
 You can view all of the authors data inside of the public/data/ directory. Each author is an object and represents someone who wrote one or more books in the library.
 
 ### Books
 
 You can view all of the books data inside of the public/data/ directory. Each book is an object and represents a physical book but also contains additional information. In particular:
 
-* The authorId matches up with an author. It represents who wrote the book.
-* The borrows array is a list of transactions that have occurred with this book. For example, the above book has been borrowed three times.
-* The id for each "borrow" record matches with an account ID. In the above example, the account with an ID of "5f446f2e2a4fcd687493a775" has not yet returned the book, meaning they still are in possession of it.
+- The authorId matches up with an author. It represents who wrote the book.
+- The borrows array is a list of transactions that have occurred with this book. For example, the above book has been borrowed three times.
+- The id for each "borrow" record matches with an account ID. In the above example, the account with an ID of "5f446f2e2a4fcd687493a775" has not yet returned the book, meaning they still are in possession of it.
 
 ## Account Functions
 
@@ -434,4 +447,5 @@ getMostPopularAuthors(books, authors);
   ]
 */
 ```
+
 ## Screenshots
