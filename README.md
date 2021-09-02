@@ -1,12 +1,46 @@
-## Function instructions
+## Local Library Project
 
-The following functions can be completed in whichever order you choose. There are difficult problems associated with each page, so feel free to skip around as you work your way up to solving more challenging problems!
+## Table of Contents
+* [General Information](#general-information)
+* [Technologies](#technologies)
+* [Datasets](#datasets)
+* [Account Functions](#account-functions)
+* [Screenshots](#screenshots)
 
----
+## General Information
+This web page was built for a neighborhood that has decided to create a digital local library where patrons can lend and borrow books.  I assisted with this project by building the javascript algorithms that render various statistics on the pages' dashboard.  The project goals were:
+ * Practice writing javascript in a project based enviornment by working with large datasets.
+ * Build algorithms based on those datasets.
+ * Use well-named variables, in particular avoiding any single letter variables that lack meaning.
+* Use native array methods like .find(), .filter(), .map(), and .reduce().
+* Make use of both function declarations and arrow functions.
+* Build helper functions when appropriate.
+* Make use of advanced JavaScript features like ternary operators, the spread operator, object shorthand, array and object destructuring, and for/in loops.
 
-### Account functions
+## Technologies
+* HTML
+* CSS
+* JavaScript
 
-![image.png](//res.cloudinary.com/strive/image/upload/w_1000,h_1000,c_limit/11c23e4622a87eab216668be31c759ac-image.png)
+## Datasets
+There are three datasets that are a part of this project: accounts, authors, and books.
+
+### Accounts
+
+You can view all of the accounts data inside of the public/data/ directory. Each account is an object and an account represents a person who is registered with the library. Accounts can take out and return books.
+
+### Authors
+You can view all of the authors data inside of the public/data/ directory. Each author is an object and represents someone who wrote one or more books in the library.
+
+### Books
+
+You can view all of the books data inside of the public/data/ directory. Each book is an object and represents a physical book but also contains additional information. In particular:
+
+* The authorId matches up with an author. It represents who wrote the book.
+* The borrows array is a list of transactions that have occurred with this book. For example, the above book has been borrowed three times.
+* The id for each "borrow" record matches with an account ID. In the above example, the account with an ID of "5f446f2e2a4fcd687493a775" has not yet returned the book, meaning they still are in possession of it.
+
+## Account Functions
 
 #### findAccountById()
 
@@ -123,8 +157,6 @@ getBooksPossessedByAccount(account, books, authors);
 ---
 
 ### Book functions
-
-![image.png](//res.cloudinary.com/strive/image/upload/w_1000,h_1000,c_limit/9012c8115fddba330e4958c3a907bcaa-image.png)
 
 #### findAuthorById()
 
@@ -273,8 +305,6 @@ getBorrowersForBook(book, accounts);
 
 ## Home functions
 
-![image.png](//res.cloudinary.com/strive/image/upload/w_1000,h_1000,c_limit/6e9b6e3b27d21cff7c80cd9efec9c421-image.png)
-
 ### getTotalBooksCount()
 
 The `getTotalBooksCount()` function in `public/src/home.js` has a single parameter:
@@ -404,3 +434,4 @@ getMostPopularAuthors(books, authors);
   ]
 */
 ```
+## Screenshots
